@@ -1,0 +1,28 @@
+MINILANG FLEX/BISON TRANSLATOR
+-----------------------------
+  addType(a)
+  addType(b)
+Declaration type=int
+  addType(c)
+Declaration type=float
+Assignment to a
+AST:
++
+  b
+  *
+    c
+    4
+Assignment to a
+AST:
+-
+  a
+  1
+Assignment to b
+AST:
++
+  b
+  1
+Parsing completed.
+
+REFERENCE OUTPUT — illustrative format only.
+Run lexer.l + parser.y in a Flex/Bison compiler to obtain your actual compiler output.

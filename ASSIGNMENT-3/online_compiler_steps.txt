@@ -1,0 +1,10 @@
+ONLINE FLEX/BISON COMPILER PROCEDURE
+1. Open an online compiler that explicitly supports both Flex (Lex) and Bison (Yacc).
+2. Create lexer.l and parser.y files (some sites ask for lex.l and yacc.y).
+3. Paste the complete contents from source_code/lexer.l and source_code/parser.y.
+4. Set the input/stdin to the contents of sample_minilang.txt.
+5. Compile. If the site asks for a build command, use:
+      bison -d parser.y && flex lexer.l && gcc parser.tab.c lex.yy.c -o minilang -lfl
+6. Run and inspect the output. Correct any site-specific file-name or library setting.
+7. Capture the compiler pane and output pane together. Save genuine screenshots in outputs/.
+8. Do not submit a reference output as if it were a screenshot from an online compiler.
